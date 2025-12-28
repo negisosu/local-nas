@@ -1,0 +1,30 @@
+{
+    "gitmoji.addCustomEmoji": [
+        {
+            "emoji": "fix: 🐛 ",
+            "code": ":bug:",
+            "description": "バグの修正"
+        },
+        {
+            "emoji": "feat: ✨",
+            "code": ":sparkles:",
+            "description": "新機能の導入"
+        },
+        {
+            "emoji": "init: 🔧 ",
+            "code": ":wrench:",
+            "description": "初期セットアップ"
+        },
+        {
+            "emoji": "refactor: 🔨 ",
+            "code": ":hammer:",
+            "description": "新機能やバグ修正以外のコード変更"
+        },
+        {
+            "emoji": "style: 💄 ",
+            "code": ":lipstick:",
+            "description": "UIの変更"
+        },
+    ],
+    "gitmoji.onlyUseCustomEmoji": true
+}
