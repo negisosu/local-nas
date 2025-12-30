@@ -9,7 +9,18 @@
 * 🟢 You can import this file directly.
 */
 
+export const NodeType = {
+  FILE: 'FILE',
+  FOLDER: 'FOLDER'
+} as const
+
+export type NodeType = (typeof NodeType)[keyof typeof NodeType]
 
 
-// This file is empty because there are no enums in the schema.
-export {}
+export const WorkspaceRole = {
+  OWNER: 'OWNER',
+  ADMIN: 'ADMIN',
+  MEMBER: 'MEMBER'
+} as const
+
+export type WorkspaceRole = (typeof WorkspaceRole)[keyof typeof WorkspaceRole]

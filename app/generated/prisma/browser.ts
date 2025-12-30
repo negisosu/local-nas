@@ -37,3 +37,33 @@ export type Account = Prisma.AccountModel
  * 
  */
 export type Verification = Prisma.VerificationModel
+/**
+ * Model Workspace
+ * 
+ */
+export type Workspace = Prisma.WorkspaceModel
+/**
+ * Model WorkspaceMember
+ * 
+ */
+export type WorkspaceMember = Prisma.WorkspaceMemberModel
+/**
+ * Model Node
+ * 
+ */
+export type Node = Prisma.NodeModel
+/**
+ * Model Blob
+ * 
+ */
+export type Blob = Prisma.BlobModel
+/**
+ * Model FileRevision
+ * 
+ */
+export type FileRevision = Prisma.FileRevisionModel
+/**
+ * Model NodeClosure
+ * 
+ */
+export type NodeClosure = Prisma.NodeClosureModel

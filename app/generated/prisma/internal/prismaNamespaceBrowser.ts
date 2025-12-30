@@ -54,7 +54,13 @@ export const ModelName = {
   User: 'User',
   Session: 'Session',
   Account: 'Account',
-  Verification: 'Verification'
+  Verification: 'Verification',
+  Workspace: 'Workspace',
+  WorkspaceMember: 'WorkspaceMember',
+  Node: 'Node',
+  Blob: 'Blob',
+  FileRevision: 'FileRevision',
+  NodeClosure: 'NodeClosure'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -129,6 +135,73 @@ export const VerificationScalarFieldEnum = {
 } as const
 
 export type VerificationScalarFieldEnum = (typeof VerificationScalarFieldEnum)[keyof typeof VerificationScalarFieldEnum]
+
+
+export const WorkspaceScalarFieldEnum = {
+  id: 'id',
+  name: 'name'
+} as const
+
+export type WorkspaceScalarFieldEnum = (typeof WorkspaceScalarFieldEnum)[keyof typeof WorkspaceScalarFieldEnum]
+
+
+export const WorkspaceMemberScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  workspaceId: 'workspaceId',
+  role: 'role'
+} as const
+
+export type WorkspaceMemberScalarFieldEnum = (typeof WorkspaceMemberScalarFieldEnum)[keyof typeof WorkspaceMemberScalarFieldEnum]
+
+
+export const NodeScalarFieldEnum = {
+  id: 'id',
+  workspaceId: 'workspaceId',
+  parentId: 'parentId',
+  type: 'type',
+  name: 'name',
+  createdById: 'createdById',
+  currentRevisionId: 'currentRevisionId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type NodeScalarFieldEnum = (typeof NodeScalarFieldEnum)[keyof typeof NodeScalarFieldEnum]
+
+
+export const BlobScalarFieldEnum = {
+  id: 'id',
+  bucket: 'bucket',
+  objectKey: 'objectKey',
+  sizeBytes: 'sizeBytes',
+  contentType: 'contentType',
+  sha256: 'sha256',
+  createdAt: 'createdAt'
+} as const
+
+export type BlobScalarFieldEnum = (typeof BlobScalarFieldEnum)[keyof typeof BlobScalarFieldEnum]
+
+
+export const FileRevisionScalarFieldEnum = {
+  id: 'id',
+  nodeId: 'nodeId',
+  blobId: 'blobId',
+  rev: 'rev',
+  createdById: 'createdById',
+  createdAt: 'createdAt'
+} as const
+
+export type FileRevisionScalarFieldEnum = (typeof FileRevisionScalarFieldEnum)[keyof typeof FileRevisionScalarFieldEnum]
+
+
+export const NodeClosureScalarFieldEnum = {
+  ancestorId: 'ancestorId',
+  descendantId: 'descendantId',
+  depth: 'depth'
+} as const
+
+export type NodeClosureScalarFieldEnum = (typeof NodeClosureScalarFieldEnum)[keyof typeof NodeClosureScalarFieldEnum]
 
 
 export const SortOrder = {
